@@ -1,0 +1,32 @@
+{
+  "name": "gym-pass-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "5.0.0",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.3.1",
+    "fastify": "4.17.0",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.1.0",
+    "@types/bcryptjs": "2.4.2",
+    "@types/node": "20.2.5",
+    "eslint": "8.45.0",
+    "eslint-plugin-prettier": "5.0.0",
+    "prisma": "5.0.0",
+    "tsup": "6.7.0",
+    "tsx": "3.12.7",
+    "typescript": "5.1.3"
+  }
+}
