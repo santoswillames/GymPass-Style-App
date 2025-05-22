@@ -1,0 +1,17 @@
+name: Run Unit Tests
+
+# Quando queremos executar o workflow, podemos usar o evento push ou pull_request
+on: [push]
+
+jobs:
+  run-unit-tests:
+    name: Run Unit Testssteps
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run test
